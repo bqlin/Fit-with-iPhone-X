@@ -1,14 +1,14 @@
 //
-//  UINavigationController+PLVVod.m
-//  PolyvVodSDK
+//  UINavigationController+TopVC.m
+//  iPhoneXFit
 //
-//  Created by BqLin on 2017/10/30.
-//  Copyright © 2017年 POLYV. All rights reserved.
+//  Created by Bq Lin on 2018/1/4.
+//  Copyright © 2018年 POLYV. All rights reserved.
 //
 
-#import "UINavigationController+PLVVod.h"
+#import "UINavigationController+TopVC.h"
 
-@implementation UINavigationController (PLVVod)
+@implementation UINavigationController (TopVC)
 
 - (BOOL)shouldAutorotate {
 	return [self.topViewController shouldAutorotate];
