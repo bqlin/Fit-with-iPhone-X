@@ -17,8 +17,17 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	NSLog(@"%@, view margin: %@", self, NSStringFromUIEdgeInsets(self.view.layoutMargins));
 }
 
+- (void)viewLayoutMarginsDidChange {
+	[super viewLayoutMarginsDidChange];
+	NSLog(@"%@, view margin change: %@", self, NSStringFromUIEdgeInsets(self.view.layoutMargins));
+}
+
+- (BOOL)prefersStatusBarHidden {
+	return NO;
+}
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
